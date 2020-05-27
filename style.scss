@@ -67,7 +67,7 @@ ul li {
         ul {
             @include flex;
             li {
-                margin-right: 30px;
+                margin-right: 50px;
             }
             .searchBar {
                 @include size(350px,40px);
@@ -469,6 +469,144 @@ ul li {
                     letter-spacing: 5px;
                     color: $white;
                     border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+// animate
+.navBar {
+    transition-duration: 0.3s;
+    background-color: rgba($mainColor,0);
+    .searchBar {
+        transition-duration: 0.3s;
+    }
+    ul li , img {
+        opacity: 0.7;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &.show {
+        transition-delay: 0s;
+        background-color: rgba($mainColor,.97);
+        .searchBar {
+            transition-delay: 0.2s;
+            display: none;
+            opacity: 0;
+        }
+    }
+}
+
+.landing {
+    .btn {
+        transition-duration: 0.5s;
+        cursor: pointer;
+        &:hover {
+            transform: translate(3px,3px);
+            img {
+                animation: move 1.5s infinite;
+            }
+        }
+    }
+    .items img {
+        opacity: 0.8;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+            transform: translate(-3px,-3px);
+        }
+    }
+}
+@keyframes move {
+    0%,100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.guide {
+    .title {
+        .btn{
+            cursor: pointer;
+        }
+    }
+    .item {
+        cursor: pointer;
+        transition-duration: 0.5s;
+        &:hover {
+            transform: scale(1.02);
+            &::after {
+                animation: move 2s infinite;
+            }
+        }
+    }
+}
+
+.shop {
+    .title {
+        .btn{
+            cursor: pointer;
+        }
+    }
+    .bar {
+        ul li {
+            transition-duration: 0.5s;
+            opacity: 0.7;
+            cursor: pointer;
+            &::before {
+                transition-duration: 0.5s;
+            }
+            &:hover {
+                opacity: 1;
+                &::before {
+                    transform: translateX(-10px);
+                    width: 20px !important;
+                }
+            }
+        }
+    }
+    .wrap {
+        .item {
+            transition-duration: 0.5s;
+            cursor: pointer;
+            &:hover {
+                transform: translate(-5px,-5px);
+            }
+        }
+    }
+}
+
+.message {
+    .infos {
+        .icons {
+            img {
+                transition-duration: 0.5s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    form {
+        #submit {
+            input {
+                transition-duration: 0.5s;
+                cursor: pointer;
+            }
+            &:hover {
+                input {
+                    border: 2px solid $mainColor;
+                    background-color: rgba($mainColor,0);
+                    color: $mainColor;
                 }
             }
         }

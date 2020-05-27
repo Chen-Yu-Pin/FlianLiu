@@ -101,7 +101,7 @@ ul li {
 }
 
 .navBar .inner ul li {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .navBar .inner ul .searchBar {
@@ -897,5 +897,171 @@ ul li {
   letter-spacing: 5px;
   color: #FFF;
   border-radius: 5px;
+}
+
+.navBar {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: rgba(11, 66, 63, 0);
+}
+
+.navBar .searchBar {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.navBar ul li, .navBar img {
+  opacity: 0.7;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.navBar ul li:hover, .navBar img:hover {
+  opacity: 1;
+}
+
+.navBar.show {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  background-color: rgba(11, 66, 63, 0.97);
+}
+
+.navBar.show .searchBar {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  display: none;
+  opacity: 0;
+}
+
+.landing .btn {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.landing .btn:hover {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.landing .btn:hover img {
+  -webkit-animation: move 1.5s infinite;
+          animation: move 1.5s infinite;
+}
+
+.landing .items img {
+  opacity: 0.8;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.landing .items img:hover {
+  opacity: 1;
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+}
+
+@-webkit-keyframes move {
+  0%, 100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes move {
+  0%, 100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+.guide .title .btn {
+  cursor: pointer;
+}
+
+.guide .item {
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.guide .item:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.guide .item:hover::after {
+  -webkit-animation: move 2s infinite;
+          animation: move 2s infinite;
+}
+
+.shop .title .btn {
+  cursor: pointer;
+}
+
+.shop .bar ul li {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.shop .bar ul li::before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.shop .bar ul li:hover {
+  opacity: 1;
+}
+
+.shop .bar ul li:hover::before {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  width: 20px !important;
+}
+
+.shop .wrap .item {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.shop .wrap .item:hover {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+
+.message .infos .icons img {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.message .infos .icons img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.message form #submit input {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.message form #submit:hover input {
+  border: 2px solid #0b423f;
+  background-color: rgba(11, 66, 63, 0);
+  color: #0b423f;
 }
 /*# sourceMappingURL=style.css.map */
