@@ -1,4 +1,0 @@
-deploy:
-type: github
-repository: https://github.com/FlianLiu/FlianLiu.git
-root: /flianliu.github.io/
