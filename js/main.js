@@ -28,10 +28,6 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop:message},1000);
     });
 
-    $('.landing .btn').click(function(){
-        $('html,body').animate({scrollTop:guide},1000);
-    });
-
     $('.message #submit').click(function(){
         alert('已提交表單');
     });
